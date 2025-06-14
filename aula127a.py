@@ -14,5 +14,7 @@ p3 = Pessoa("Joelma Patino", 22)
 
 db = [vars(p1), vars(p2), vars(p3)]
 
-with open(CAMINHO_ARQUIVO, 'w') as arquivo:
-    json.dump(db, arquivo, ensure_ascii=False, indent=2) 
+def realizar_dump():
+    with open(CAMINHO_ARQUIVO , 'w') as arquivo:
+        json.dump(db, arquivo, ensure_ascii=False, indent=2)
+        print('401 - Ok ---> Dump Realizado Com Sucesso!!!')
