@@ -1,3 +1,4 @@
+# __dict__ vars para atributos de instância
 class Pessoa:
     ano_atual = 2025
 
@@ -16,3 +17,5 @@ print(Pessoa.ano_atual)
 
 print(p1.getAnoNascimento())
 print(p2.getAnoNascimento())
+print(p1.__dict__)
+print(vars(p1))
