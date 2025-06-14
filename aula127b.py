@@ -1,6 +1,8 @@
 import json
 
-from aula127a import CAMINHO_ARQUIVO, Pessoa
+from aula127a import CAMINHO_ARQUIVO, Pessoa, realizar_dump
+
+realizar_dump()
 
 with open(CAMINHO_ARQUIVO, 'r') as arquivo:
     pessoas = json.load(arquivo)
